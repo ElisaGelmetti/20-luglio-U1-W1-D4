@@ -43,7 +43,7 @@ class CapiAbbigliamento implements Abbigliamento {
 
   // Calcolo calcolare il costo totale del capo con IVA inclusa
   getacquistocapo(): number {
-    return this.prezzoivainclusa;
+    return this.prezzoivainclusa - this.getsaldocapo();
   }
 }
 

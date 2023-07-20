@@ -35,7 +35,7 @@ class CapiAbbigliamento {
     }
     // Calcolo calcolare il costo totale del capo con IVA inclusa
     getacquistocapo() {
-        return this.prezzoivainclusa;
+        return this.prezzoivainclusa - this.getsaldocapo();
     }
 }
 // Prendo i dati dentro API
